@@ -11,7 +11,7 @@ router.post("/", (req, res) => {
 
     method: 'post',
     url: 'https://us18.api.mailchimp.com/3.0/lists/e175945299/members',
-    headers: {Authorization: "apikey 25be1061e78efefc69c2702b83bdaf13-us18"},
+    headers: {Authorization: "apikey apiKeyGoesHere"},
     data: { email_address: req.body.email, status: 'subscribed' },
     responseType: 'json'
 
@@ -42,7 +42,7 @@ router.post("/", (req, res) => {
 
    })
 
-   
+
 
 
 
