@@ -9,5 +9,12 @@ html
     form(action"/", method="post")
       input(type='email', name='email', id="email")
       input(type='submit', name='submit', id="submit")
-    div(class="success") Success!    
+    if(successMessage)            
+     div(class="success") #{successMessage}
+    else if(memberExistsMessage) 
+     div(class="failed") #{memberExistsMessage}
+    else if(missingMessage) 
+     div(class="failed") #{missingMessage}
+    else if(invalidMessage) 
+     div(class="failed") #{invalidMessage}
     script(type='text/javascript', src='./js/build.js')

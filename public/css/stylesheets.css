@@ -7,13 +7,27 @@ border-radius: 2%;
 text-align: center;
 display: table-cell;
 vertical-align: middle;
-opacity:0;
+opacity:1;
 transition: all 1.5s cubic-bezier(0.42, 0, 0.6, 1.67);
 
 }
 
-.fadeIn{
-opacity: 1;
+.failed{
+height: 100px;
+width: 300px;
+background-color:orange;
+color: white;
+border-radius: 2%;
+text-align: center;
+display: table-cell;
+vertical-align: middle;
+opacity:1;
+transition: all 1.5s cubic-bezier(0.42, 0, 0.6, 1.67);
+
+}
+
+.fade{
+opacity: 0;
 transform: translateY(0px)
 
 }
